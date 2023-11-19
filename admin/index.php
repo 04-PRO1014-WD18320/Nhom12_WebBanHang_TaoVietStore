@@ -60,7 +60,7 @@
                             } else {
                             // echo "Sorry, there was an error uploading your file.";
                             }
-    
+
                         insert_sanpham($tensp,$giasp,$hinh,$mota,$iddm);
                         
                         $thongbao="Thêm thành công";

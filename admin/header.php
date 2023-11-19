@@ -17,8 +17,8 @@
             <ul>
                 <li><a href="index.php">Trang chủ</a></li>
                 <li><a href="index.php?act=adddm">Danh mục</a></li>
-                <li><a >cmt</a></li>
-                
+                <li><a href="index.php?act=addsp">Sản Phẩm</a></li>
+
     
             </ul>
         </div>
