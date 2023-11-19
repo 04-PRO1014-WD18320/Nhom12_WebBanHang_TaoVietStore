@@ -1,7 +1,7 @@
 <?php
 // Mo ket noi den co so du lieu
 function pdo_get_connection(){
-    $dburl = "mysql:host=localhost;dbname=duanmau;charset=utf8";
+    $dburl = "mysql:host=localhost;dbname=dataduan1;charset=utf8";
     $username = 'root';
     $password = '';
 
