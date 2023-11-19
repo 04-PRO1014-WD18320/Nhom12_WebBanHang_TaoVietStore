@@ -10,15 +10,16 @@
 <body>
     <div class="container">
         <div class="row mb headeradmin">
-            <h1>Ban dien thoai</h1>
+            <h1>Quan ly</h1>
         </div>
         
         <div class="row mb menu">
             <ul>
                 <li><a href="index.php">Trang chủ</a></li>
                 <li><a href="index.php?act=adddm">Danh mục</a></li>
-                <li><a >cmt</a></li>
-                
+                <li><a >San pham</a></li>
+                <li><a >Tai Khoan</a></li>
+                <li><a >Thong ke</a></li>
     
             </ul>
         </div>
