@@ -1,6 +1,7 @@
 <?php
     include "../model/pdo.php";
     include "../model/danhmuc.php";
+    include "../model/sanpham.php";
     include "header.php";
     if(isset($_GET['act'])){
         $act=$_GET['act'];
@@ -60,7 +61,7 @@
                             } else {
                             // echo "Sorry, there was an error uploading your file.";
                             }
-    
+
                         insert_sanpham($tensp,$giasp,$hinh,$mota,$iddm);
                         
                         $thongbao="Thêm thành công";
