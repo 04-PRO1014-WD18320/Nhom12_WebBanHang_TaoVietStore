@@ -11,7 +11,7 @@
 <body>
 
     <div class="container">
-        <form action="index.php?act=dangnhap" method="post">
+        <form action="kiemtradn.php?act=dangnhap" method="post">
             <h1>Đăng nhập</h1>
            
             <div class="boxx">
@@ -24,7 +24,7 @@
                 
             </div>
             <div class="chucnang">
-            <label for=""><a href="index.php?act=dangky">Chưa có tài khoản?</a></label>
+            <label for=""><a href="kiemtradn.php?act=dangky">Chưa có tài khoản?</a></label>
             <label for="" class="mnnn"><a href="">Quên mật khẩu</a></label>
             </div>
 

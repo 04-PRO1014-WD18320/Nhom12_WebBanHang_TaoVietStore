@@ -11,7 +11,7 @@
 <body>
 
     <div class="container">
-        <form action="index.php?act=dangky" method="post">
+        <form action="kiemtradn.php?act=dangky" method="post">
             <h1>Đăng ký</h1>
             <div class="boxx">
                 <input type="email" name="email"  placeholder=" " required>
@@ -31,7 +31,7 @@
                 
             </div>
             <div class="chucnang">
-            <label for=""><a href="index.php?act=dangnhap">Đăng nhập</a></label>
+            <label for=""><a href="kiemtradn.php?act=dangnhap">Đăng nhập</a></label>
             </div>
 
           
