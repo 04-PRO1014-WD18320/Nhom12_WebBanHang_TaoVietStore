@@ -1,6 +1,5 @@
 <?php
 session_start();
-include "view/header.php";
 include "model/taikhoan.php";
 include "model/pdo.php";
 if((isset($_GET['act']))&&($_GET['act']!="")){
@@ -29,7 +28,7 @@ if((isset($_GET['act']))&&($_GET['act']!="")){
                     header('Location:index.php');
                  
                 }else{
-                    $thongbao="Tài khoản không tồn tại . Vui lòng kiểm tra lại hoặc đăng ký !";
+                    $thongbao="Tài khoản không tồn tại.";
                 }
             }
             include "view/taikhoan/dangnhap.php";
@@ -37,14 +36,11 @@ if((isset($_GET['act']))&&($_GET['act']!="")){
 
 
         default:
-                include "view/home.php";
                 break;
             
         }
     } else{
-            include "view/home.php";
         }
         
-        include "view/footer.php";
 
 ?>
