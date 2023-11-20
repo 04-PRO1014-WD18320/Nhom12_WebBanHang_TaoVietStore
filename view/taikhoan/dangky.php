@@ -34,9 +34,9 @@
             <label for=""><a href="index.php?act=dangnhap">Đăng nhập</a></label>
             </div>
 
-           <div class="input-box1">
-                <input type="submit" value="Đăng ký" name="dangky"  >
-           </div>
+          
+                <input class="btn" type="submit" value="Đăng ký" name="dangky"  >
+          
             </form>
         <h2 class="thongbao">
                             <?php

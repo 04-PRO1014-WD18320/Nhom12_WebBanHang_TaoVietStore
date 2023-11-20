@@ -28,9 +28,9 @@
             <label for="" class="mnnn"><a href="">Quên mật khẩu</a></label>
             </div>
 
-           <div class="input-box1">
-                <input type="submit" value="Đăng nhập" name="dangnhap"  >
-           </div>
+           
+                <input class="btn" type="submit" value="Đăng nhập" name="dangnhap"  >
+           
             </form>
         <h2 class="thongbao">
                             <?php

@@ -11,12 +11,12 @@
     }
 
     function checkname($name,$pass){
-        $sql="select *from taikhoan where name='".$name."' AND pass='".$pass."' ";
+        $sql="select *from nguoidung where name='".$name."' AND pass='".$pass."' ";
         $sp = pdo_query_one($sql);
         return $sp;
     }
     function checkemail($email){
-        $sql="select *from taikhoan where email='".$email."'" ;
+        $sql="select *from nguoidung where email='".$email."'" ;
         $sp = pdo_query_one($sql);
         return $sp;
     }
