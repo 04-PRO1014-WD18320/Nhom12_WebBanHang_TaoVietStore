@@ -27,7 +27,6 @@
                             <th>TÊN sản phẩm</th>
                             <th>Hình</th>
                             <th>Giá</th>
-                            <th>Lượt xem</th>
                             <th></th>
                         </tr>
                         <?php
@@ -48,7 +47,6 @@
                                 <td>'.$name.'</td>
                                 <td>'.$hinh.'</td>
                                 <td>'.$price.'</td>
-                                <td>'.$luotxem.'</td>
                                 <td><a href="'.$suasp.'"><input type="button" value="Sửa"></a> <a href="'.$xoasp.'"><input type="button" value="Xóa"></a></td>
                             </tr>';
                         }
@@ -61,7 +59,7 @@
                     <input type="button" value="Chọn tất cả">
                     <input type="button" value="Bỏ chọn tất cả">
                     <input type="button" value="Xóa các mục đã Chọn">
-                    <a href="index.php?actư=addsp"><input type="button" value="Nhập Thêm"></a>
+                    <a href="index.php?act=addsp"><input type="button" value="Nhập Thêm"></a>
                 </div>
             </div>
         </div>
