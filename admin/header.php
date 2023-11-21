@@ -20,10 +20,9 @@
             <ul>
                 <li><a href="index.php">Trang chủ</a></li>
                 <li><a href="index.php?act=adddm">Danh mục</a></li>
-                <li><a >San pham</a></li>
+                <li><a href="index.php?act=addsp">San pham</a></li>
                 <li><a >Tai Khoan</a></li>
                 <li><a >Thong ke</a></li>
-          <li><a href="index.php?act=addsp">Sản Phẩm</a></li>
     
 
                
