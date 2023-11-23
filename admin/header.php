@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../view/css/admin.css">
+    <link rel="stylesheet" href="../view/css/dssp.css">
 
 </head>
 
@@ -20,9 +21,9 @@
             <ul>
                 <li><a href="index.php">Trang chủ</a></li>
                 <li><a href="index.php?act=adddm">Danh mục</a></li>
-                <li><a href="index.php?act=addsp">San pham</a></li>
-                <li><a >Tai Khoan</a></li>
-                <li><a >Thong ke</a></li>
+                <li><a href="index.php?act=addsp">Sản Phẩm</a></li>
+                <li><a >Tài Khoản</a></li>
+                <li><a >Thống Kê</a></li>
     
 
                
