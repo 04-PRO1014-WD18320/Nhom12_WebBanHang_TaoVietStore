@@ -21,8 +21,9 @@
                 <li><a href="index.php">Trang chủ</a></li>
                 <li><a href="index.php?act=adddm">Danh mục</a></li>
                 <li><a href="index.php?act=addsp">San pham</a></li>
-                <li><a >Tai Khoan</a></li>
-                <li><a >Thong ke</a></li>
+                <li><a >Gioi Thieu</a></li>
+                <li><a >Lien He</a></li>
+                <li><a >Chinh Sach</a></li>
           
     
 
