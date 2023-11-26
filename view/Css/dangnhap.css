@@ -153,7 +153,7 @@ body {
 }
 
 .container {
-    margin: 80px auto;
+    margin: 10% auto;
     width: 400px;
     background: #fff;
     border-radius: 5px;
@@ -162,8 +162,8 @@ body {
     box-sizing: border-box;
     position: absolute;
     z-index: 999;
-    left: 33%;
-    top: 5%;
+    left: 37%;
+    top: 9%;
    
 }
 .mnnn{
