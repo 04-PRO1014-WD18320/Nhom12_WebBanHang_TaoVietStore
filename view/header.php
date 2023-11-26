@@ -6,7 +6,7 @@
     <title>TaoVietStore</title>
     <link rel="stylesheet" href="view/css/style1.css">
     
-
+    
 </head>
 <body>
     <div class="container">

@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="view/css/css2.css">
+<!-- <link rel="stylesheet" href="view/css/css2.css"> -->
 <header>
             <!-- Slideshow container -->
 <div class="slideshow-container">
@@ -35,9 +35,13 @@
   <span class="dot" onclick="currentSlide(3)"></span>
 </div>
         </header>
-
+        <h2 style="text-align: center;
+    margin-top: 20px;
+    font-size: 32px;
+    color: brown;
+    ">IPhone</h2>
         <div class="row">
-             <h2>IPhone</h2>
+             
             <?php
             $i=0;
             foreach ($spnew as $sp) {
@@ -54,9 +58,10 @@
                     
                     <div class="item'.$mr.'">
                     <table border="1">
-                      <td>  <img src="'.$hinh.'" alt="" height="300px">
+                      <td>  <img src="'.$hinh.'" alt="" height="300px" >
                         <div class="name">'.$name.'</div>
                         <div class="price">'.$price.'</div> </td>
+                        
                         </table>
                     </div>';
                  

@@ -1,75 +1,40 @@
-/* Reset some default styles */
-body, h1, h2, p, ul {
-    margin: 0;
-    padding: 0;
-}
-
-/* Apply a background color to the body */
-body {
-    background-color: #f4f4f4;
-}
-
-/* Header Styles */
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-}
-
-/* Slideshow Styles */
-.slideshow-container {
-    max-width: 1000px;
-    margin: auto;
-}
-
-.mySlides {
-    display: none;
-}
-
-img {
-    width: 100%;
-}
-
-/* Product Section Styles */
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .list-products {
-    list-style-type: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .item {
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    text-align: center;
+  width: 200px; /* Set a specific width for each item */
+  margin: 10px; /* Add some margin between items */
+  border: 1px solid #ddd; /* Add a border for better visibility */
+  padding: 10px; /* Add some padding for better spacing */
+  text-align: center;
+}
+
+.item img {
+  max-width: 100%;
+  height: auto;
 }
 
 .name {
-    font-weight: bold;
-    margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 5px;
 }
 
 .price {
-    color: green;
-}
+  color: #007bff; /* Set a color for the price */
+  font-size: 14px;
+  margin-top: 5px;
 
-/* Dot Navigation Styles */
-.dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 5px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active {
-    background-color: #717171;
+  
 }

@@ -23,10 +23,10 @@
     background-color: black;
 }
    
-.mr{
-      margin-right: 2%;
+/* .mr{
+      margin-right: 2%; 
     
-}
+} */
 .menu{
     list-style: none;
     display :flex;
@@ -120,6 +120,8 @@ header img{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+ 
+  
 }
 .list-products .item .mr{
     width: 500px;
@@ -127,6 +129,8 @@ header img{
    border: 1px rebeccapurple solid;
     border-radius: 10px;
     margin-bottom: 50px;
+  
+  
   
 
 }
