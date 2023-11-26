@@ -2,6 +2,7 @@
     include "../model/pdo.php";
     include "../model/danhmuc.php";
     include "../model/sanpham.php";
+    include "../model/cart.php";
     include "header.php";
     if(isset($_GET['act'])){
         $act=$_GET['act'];
@@ -11,7 +12,7 @@
                 if(isset($_POST['themmoi'])&&($_POST["themmoi"])){
                     $tenloai=$_POST['tenloai'];
                     insert_danhmuc($tenloai);
-                    $thongbao="Thêm thành công";
+                    $thongbao="Thêm thành công";    
                 }
                 
                 include "danhmuc/add.php";
@@ -137,11 +138,11 @@
                         $idbill =   insert_bill($name,$email,$address,$tel,$ptt,$ngaydathang,$tongdonhang)
 
 
-                        foreach ($_SESSION['mycart']as $cart){
-                            insert_cart($_SESSION['user']['id'],$cart['0'],$cart['2'],$cart['1'],$cart['3'],$cart['4'],$cart['5'], $idbill)
-                        }
+                        // foreach($_SESSION['mycart']as $cart){
+                        //     insert_cart($_SESSION['user']['id'],$cart['0'],$cart['2'],$cart['1'],$cart['3'],$cart['4'],$cart['5'], $idbill);
+                        // }
 
-                        $_SESSION['cart'] = [];
+                        // $_SESSION['cart'] = [];
                     }
                     $listbill = loadone_bill($idbill);
                     $billct = loadall_cart($idbill);

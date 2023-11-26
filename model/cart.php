@@ -1,4 +1,4 @@
-<?php
+<?php   
 function viewcart($del){
     global $img_path;
     $tong = 0; 
@@ -30,7 +30,7 @@ function viewcart($del){
         }
             echo "
              <tr>
-             <td>img src ="'.$hinh.'"alt="" height= "80px"></td>
+             <td> <img src=".$hinh."></td>
              <td>"$cart[1]."</td>
              <td>"$cart[3]."</td>
              <td>"$cart[4]."</td>
@@ -63,7 +63,7 @@ function billct($listbill){
         $tong+= $cart['thanhtien'];
             echo "
              <tr>
-             <td>img src ="'.$hinh.'"alt="" height= "80px"></td>
+             <td> <img src="'.$hinh.'" alt="" height="80px"></td>
              <td>"$cart['name']."</td>
              <td>"$cart['price']."</td>
              <td>"$cart['soluong']."</td>
@@ -87,7 +87,7 @@ function billct($listbill){
             return $tong;   
         }
 
-        function insert_bil($name,$email,$address,$tel,$pttt,$ngaydathang,$tongdonhang){
+        function insert_bill($name,$email,$address,$tel,$pttt,$ngaydathang,$tongdonhang){
             $sql =" insert into bill(bill_name,bill_email,bill_address,bill_tel,bill_pttt,ngaydathang,total) value('$name','$email','$address','$tel','$pttt','$ngaydathang','$tongdonhang')";
             return pbo_execute_return_lastInsertId($sql);      
         }
