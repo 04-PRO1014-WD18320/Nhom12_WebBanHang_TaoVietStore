@@ -1,5 +1,5 @@
 <div class="row">
-                <div class="row frmtitle"><h1>Thêm mới sản phẩm</h1></div>
+                <div class="row frmtitle"><h1>THÊM MỚI SẢN PHẨM</h1></div>
                 <div class="row frmcontent">
                     <form action="index.php?act=addsp" method="post" enctype="multipart/form-data">
                             <div class="row mb10">

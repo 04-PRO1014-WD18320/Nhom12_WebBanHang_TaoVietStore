@@ -122,18 +122,42 @@
                     $listsanpham=loadall_sanpham("",0);
                     include "sanpham/list.php";
                     break; 
-             
+                 case "bill";
+                    include "view/cart/bill.php";   
+                    break;
+                case "billconfirm":
+                    if (isset($_POST['dongydathang'])&&($_POST['dongydathang'])){
+                        $name = $_POST['name'];
+                        $email = $_POST['email'];
+                        $address = $_POST['address'];
+                        $tel = $_POST['tel'];
+                        $pttt = $_POST['pttt'];
+                        $ngaydathang = date('h:i:sa d/m/Y');
+                        $tongdonhang= tongdonhang();
+                        $idbill =   insert_bill($name,$email,$address,$tel,$ptt,$ngaydathang,$tongdonhang)
 
 
-            default:
-            include "home.php";
-            break;
+                        foreach ($_SESSION['mycart']as $cart){
+                            insert_cart($_SESSION['user']['id'],$cart['0'],$cart['2'],$cart['1'],$cart['3'],$cart['4'],$cart['5'], $idbill)
+                        }
 
-        }
-    }else{
-        include "home.php";
-    }   
-    
-     
-    include "footer.php";   
+                        $_SESSION['cart'] = [];
+                    }
+                    $listbill = loadone_bill($idbill);
+                    $billct = loadall_cart($idbill);
+                    include  "view/cart/billconfirm.php";
+                    break;
+                case 'mybill':
+                    include  "view/cart/mybill.php";
+                    default:
+                    include "home.php";
+                    break;
+
+                        }
+                    }else{
+                        include "home.php";
+                    }   
+                    
+                    
+                    include "footer.php";   
 ?>
