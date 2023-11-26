@@ -1,0 +1,264 @@
+*{
+    padding : 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+    cursor :pointer;
+   
+}
+
+.container{
+    width : 100%;
+    height : 100%;
+   
+
+}
+.header{
+    width :100%;
+    padding : 0px 50px;
+    margin:auto;
+    display:flex;
+    justify-content : space-between;
+    align-items: center;
+    background-color: black;
+}
+   
+/* .mr{
+      margin-right: 2%; 
+    
+} */
+.menu{
+    list-style: none;
+    display :flex;
+}
+
+
+.menu ul.sub-menu{
+  position: absolute;
+  background-color:white;
+  padding: 15px 0px;
+  list-style: none;
+  width: 100px;
+  display: none;
+ 
+}
+.menu .item:hover ul.sub-menu{
+  display: block;
+}
+.menu ul.sub-menu a{
+  border-bottom: 1px solid rgb(51, 51, 51);
+
+}
+.menu ul.sub-menu li:last-child a{
+  border: none;
+}
+
+
+
+
+
+
+.menu .item{
+    margin: 0px 35px;
+    text-align: justify;  
+    position: relative;
+}
+
+.menu .item a {
+    color :white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    text-align: justify;
+  
+    
+}
+.menu .item a:hover{
+    text-decoration: none;
+    color: darkgrey;
+    cursor: pointer;
+}
+
+.actions{
+    display:flex;
+     
+}
+.actions .items{
+    margin-left: 22px;
+    background-color: white;
+   
+
+}
+header{
+    min-height: 100px;
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+
+  
+}
+header img{
+    height: 500px;
+    width: 60%;
+}
+.row{
+    padding-top: 116px ;
+    padding-bottom: 78px;
+    padding-left: 134px;
+    padding-right: 134px;
+}
+.row h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: brown;
+    
+}
+.list-products{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+ 
+  
+}
+.list-products .item .mr{
+    width: 500px;
+    height: 450px;
+   border: 1px rebeccapurple solid;
+    border-radius: 10px;
+    margin-bottom: 50px;
+  
+  
+  
+
+}
+.list-products .item img{
+    display: block;
+    margin: 0px auto;
+    margin-top: 17px;
+}
+.list-products .item .name{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+  
+}
+.list-products .item .price{
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.footer{
+    padding: 30px;
+    background-color: #eee;
+    border-bottom-left-radius: 5px ;
+    border-bottom-right-radius: 5px;
+    border: 1px #ccc solid; 
+    text-align: center;
+    font-weight: bold;
+}
+.btn{
+    font-size: 15px;
+    color: black;
+    background: gainsboro;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    outline: none;
+    margin-left: 1rem;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn:hover{
+    color: gray;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
