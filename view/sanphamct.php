@@ -25,25 +25,25 @@
     ?>
 </div>
 
-<div class="ftclone1">
+<!-- <div class="ftclone1">
     Sản phẩm cùng loại
 </div>
 
 <div class="contentt">
     <?php
-        $counter = 0; 
-        foreach ($sp_cung_loai as $sp_cung_loai) {
-            if ($counter < 4) {
-                extract($sp_cung_loai);
-                $img = $img_path . $img;
-                $linksp = "     " . $id;
-                echo '<div class="row mb spct2"><img src="' . $img . '"></div>';
-                echo '<li><a href="' . $linksp . '">' . $name . '</a></li>';
-                $counter++;
-            } else {
-                break; 
-            }
-        }
-    ?>
+        // $counter = 0; 
+        // foreach ($sp_cung_loai as $sp_cung_loai) {
+        //     if ($counter < 4) {
+        //         extract($sp_cung_loai);
+        //         $img = $img_path . $img;
+        //         $linksp = "     " . $id;
+        //         echo '<div class="row mb spct2"><img src="' . $img . '"></div>';
+        //         echo '<li><a href="' . $linksp . '">' . $name . '</a></li>';
+        //         $counter++;
+        //     } else {
+        //         break; 
+        //     }
+        // }
+    ?> -->
 </div>
 </div>
