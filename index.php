@@ -4,12 +4,12 @@
         include "model/sanpham.php";    
         include "model/taikhoan.php";   
         include "model/danhmuc.php";  
-        include "view/header.php";
         include "global.php";
+        include "view/header.php";
 
-       $dsdm=loadall_danhmuc();
+       
        $spnew=loadall_sanpham_home();
-  
+       $dsdm=loadall_danhmuc();
 
         if((isset($_GET['act']))&&($_GET['act']!="")){
             $act=$_GET['act'];
@@ -30,9 +30,8 @@
                 }
                
                 break;
-           
 
-                
+   
             
             case 'thoat':
                 session_unset();

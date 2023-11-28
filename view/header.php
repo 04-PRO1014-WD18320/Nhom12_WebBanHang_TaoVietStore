@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TaoVietStore</title>
-    <link rel="stylesheet" href="view/css/style1.css">
+    <link rel="stylesheet" href="view/css/style2.css">
     
     
 </head>
@@ -22,15 +22,18 @@
                     <a href="">Danh Mục</a>
                     <ul class="sub-menu">
                         <?php
-                        foreach($dsdm as $dm){ 
+                        foreach ($dsdm as $dm) {
                             extract($dm);
-                            $linkdm="index.php?act=sanpham&iddm=".$id;
-                            echo'<li><a href="'.$linkdm.'">'.$name.'</a></li>';
+                            $linkdm ="index.php?act=sanpham&iddm=".$id;
+                            echo '    <li>
+                            <a href="'.$linkdm.'">'.$name.'</a>
+                            </li>';
                         }
                         ?>
-                        <!-- <li><a href="">dien thoai</a></li>
+                        <!-- <li><a href="">dien thoai</a></li>en
                         <li><a href="">dien thoai</a></li>
                         <li><a href="">dien thoai</a></li>
+
                         <li><a href="">dien thoai</a></li> -->
                     </ul>
                 </div>

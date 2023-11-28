@@ -1,4 +1,4 @@
-<!-- <link rel="stylesheet" href="view/css/css2.css"> -->
+
 <header>
             <!-- Slideshow container -->
 <div class="slideshow-container">
@@ -56,7 +56,7 @@
                     }
                     echo '   <ul class="list-products">
                     
-                    <div class="item'.$mr.'">
+                    <div class="items'.$mr.'">
                     <table border="1">
                       <td>  <img src="'.$hinh.'" alt="" height="300px" >
                         <div class="name">'.$name.'</div>
@@ -70,7 +70,8 @@
             
             ?>
 
-        </div>
+      
+</div>
       <script>
   let slideIndex = 0;
 showSlides();
