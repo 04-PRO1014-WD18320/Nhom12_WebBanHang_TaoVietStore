@@ -51,7 +51,7 @@
                 <div class="row boxcontent cart">
                     <table>
                         <?php
-                            show_chitiet_bill($billct);
+                            bill_chitiet_bill($billct);
                         ?>
 
                     </table>
