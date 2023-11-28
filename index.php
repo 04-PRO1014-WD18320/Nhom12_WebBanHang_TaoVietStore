@@ -56,8 +56,8 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                     $pttt = $_POST['pttt'];
                     // date_default_timezone_set('Asia/Ho_Chi_Minh');
                     // $currentDateTime = date('Y-m-d H:i:s');
-                    if (isset($_SESSION['user'])) {
-                        $id_user = $_SESSION['user']['id'];
+                    if (isset($_SESSION['name'])) {
+                        $id_user = $_SESSION['name']['id'];
                     } else {
                         $id_user = 0;
                     }

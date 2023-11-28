@@ -84,11 +84,27 @@
 </style>
 <div class="page-order">
     <div class="form-order">
+        
         <form action="" method="post">
             <h2>Thông tin khách hàng</h2>
-            <div><input type="text" name="txthoten" id="" placeholder="Họ và tên" required></div>
-            <div><input type="tel" name="txttel" id="" placeholder="Số điện thoại" required></div>
-            <div><input type="email" name="txtemail" id="" placeholder="Email" required></div>
+            <div><input type="text" name="txthoten" id="" placeholder="Họ và tên" required  <?php
+                    if(isset($_SESSION['name'])){
+                        extract($_SESSION['name']);
+echo 'value="'.$name.'"';  ?>
+                    <?php  }else{ echo 'value=""'; }?> ></div>
+            <div><input type="tel" name="txttel" id="" placeholder="Số điện thoại" required 
+            <?php
+                    if(isset($_SESSION['name'])){
+                        extract($_SESSION['name']);
+echo 'value="'.$sdt.'"';  ?>
+                    <?php  }else{ echo 'value=""'; }?>></div>
+            <div><input type="email" name="txtemail" id="" placeholder="Email" required
+            <?php
+                    if(isset($_SESSION['name'])){
+                        extract($_SESSION['name']);
+echo 'value="'.$email.'"';  ?>
+                    <?php  }else{ echo 'value=""'; }?>
+                    ></div>
             <div><input type="text" name="txtaddress" id="" placeholder="Địa chỉ" required></div>
             <h3>Phương thức thanh toán</h3>
             <p><input type="radio" name="pttt" id="" value="1" required> Thanh toán khi giao hàng</p>
@@ -96,6 +112,9 @@
             <input type="submit" value="Xác nhận đặt hàng" name="order_confirm">
         </form>
     </div>
+
+    
+
     <div class="sub-order">
         <h2>Đơn hàng</h2>
         <table >

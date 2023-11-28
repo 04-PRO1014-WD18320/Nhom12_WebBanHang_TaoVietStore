@@ -1,12 +1,4 @@
-
-
-<div class="footer">
-            nhom 12
-           </div> 
-           <a class="dropdownbtn" href="index.php?act=listCart">Giỏ hàng</a>
-            <span id="totalProduct"><?= !empty($_SESSION['cart']) ? count($_SESSION['cart']) : 0 ?></span>
-    </div>
-    <div class="row mb ">
+ <div class="row mb ">
                 <div class="boxtitle">Tai Khoan</div>
                 <div class="boxcontent formtaikhoan">
                     <?php
@@ -43,13 +35,3 @@
                   echo'chua co tt';
 
                  }?>
-</body>
-</html> 
-
-
-<!-- <div>
-    <h1><a href="kiemtradn.php?act=dangnhap">dn</a></h1>
-
-</div> -->
-
-

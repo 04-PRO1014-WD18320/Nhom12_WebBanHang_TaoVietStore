@@ -83,7 +83,7 @@
                         style="border:1px solid #ddd; border-radius:5px; margin:5px 0; padding:8px; background:#fff; text-align:center; flex-grow:2">
                         <div>Trợ giá lên tới <strong data-val="2000000" class="renewPrice">2,000,000 ₫</strong> khi thu cũ
                             đổi mới</div>
-                        <div style="font-weight:bold; font-size:23px;"><strong class="renewValue text-red"><?= $price ?> ₫
+                        <div style="font-weight:bold; font-size:23px;"><strong class="renewValue text-red"><?= $price -2000 ?> ₫
                             </strong></div>
                     </div>
                 </div>
