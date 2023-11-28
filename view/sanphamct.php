@@ -9,16 +9,15 @@
 <div class="ctai1">
     <?php
         $img = $img_path . $img;
-     
-        ///index.php?act=sanphamct&idsp=
+     ?>
 
-        echo '<div class="product-details-container">
+       <div class="product-details-container">
         
         <div class="product-image">
-        <h1>'.$name.'</h1>
+        <h1><?= $name ?></h1>
             <div class="chinh">
                 <div class="img">
-                <img src="' . $img . '">
+                <img src="<?= $img ?>">
                 </div>
     
             </div>
@@ -28,7 +27,7 @@
             <div class="product-center" style="position:relative;">
                 <p class="price current-product-price">
                     <strong>
-                    '.$price.' ₫
+                    <?= $price ?> ₫
                     </strong>
     
                     <i> | Giá đã bao gồm VAT</i>
@@ -52,7 +51,7 @@
                         <div data-sku="MU7K3VN" class="item selected">
                             <a href="/dien-thoai-di-dong/apple-iphone-15-pro-max-1tb-chinh-hang-vn-a">
                                 <span><label><strong>1TB</strong></label></span>
-                                <strong> '.$price.' ₫</strong>
+                                <strong> <?= $price ?> ₫</strong>
                             </a>
                         </div>
                     </div>
@@ -65,7 +64,7 @@
                             data-bestprice="'.$price.' ₫" data-lastprice="" data-idx="0" data-hex="#3d4555" data-title=""
                             data-id="395" data-sku="MU7K3VN" class="item selected">
                             <span><label><strong>Titan Xanh</strong></label></span>
-                            <strong>'.$price.' ₫</strong>
+                            <strong><?= $price ?> ₫</strong>
                             <div class="colorGuide" style="background:#3d4555">
                                 <label><strong>Titan Xanh</strong></label>
                             </div>
@@ -84,7 +83,7 @@
                         style="border:1px solid #ddd; border-radius:5px; margin:5px 0; padding:8px; background:#fff; text-align:center; flex-grow:2">
                         <div>Trợ giá lên tới <strong data-val="2000000" class="renewPrice">2,000,000 ₫</strong> khi thu cũ
                             đổi mới</div>
-                        <div style="font-weight:bold; font-size:23px;"><strong class="renewValue text-red">'.$price.' ₫
+                        <div style="font-weight:bold; font-size:23px;"><strong class="renewValue text-red"><?= $price ?> ₫
                             </strong></div>
                     </div>
                 </div>
@@ -108,19 +107,11 @@
                     </ul>
                 </div>
     
-                <div class="product-action">
-
-
-                <form  action="index.php?act=addtocart" method="post" >
-                    <input type="hidden" name="id" value ="'.$id.'">
-                    <input type="hidden" name="name" value ="'.$name.'">
-                    <input type="hidden" name="img" value ="'.$img.'">
-                    <input type="hidden" name="price" value ="'.$price.'">
-                    <input type="submit" name="addtocart" value ="Mua ngay">
-                    </form>
-
-
-    </div>
+               
+    <div>
+                        <button data-id="<?= $id ?>" class="ip-f" onclick="addToCart(<?= $id ?>, '<?= $name ?>', <?= $price ?>)">Thêm vào giỏ hàng</button>
+                    </div>
+    
     
     
     
@@ -170,9 +161,35 @@
                     </div>
                 </div>
     
-    ';
-    ?>
+    
+    
+    <script src="main.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    let totalProduct = document.getElementById('totalProduct');
+    function addToCart(productId, productName, productPrice) {
+       
+        $.ajax({
+            type: 'POST',
+            url: 'view/addToCart.php',
+            data: {
+                id: productId,
+                name: productName,
+                price: productPrice
+            },
+            success: function(response) {
+                totalProduct.innerText = response;
+                alert('Bạn đã thêm sản phẩm vào giỏ hàng thành công!');
+            },
+            error: function(error) {
+                console.log(error);
+            }
+        });
+    }
+</script>
 </div>
+
 
 <div class="ftclone1">
 <strong class="label" style="font-size: larger;">Sản phẩm tương tự</strong>
@@ -210,3 +227,5 @@
     ?> 
 </div>
 </div>
+</main>
+

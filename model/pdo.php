@@ -29,6 +29,25 @@ function pdo_execute($sql){
         unset($conn);
     }
 }
+
+function pdo_executeid($sql){
+    $sql_args=array_slice(func_get_args(),1);
+    try{
+        $conn=pdo_get_connection();
+        $stmt=$conn->prepare($sql);
+        $stmt->execute($sql_args);
+        $lastInsertId = $conn->lastInsertId();
+
+        return $lastInsertId;
+    }
+    catch(PDOException $e){
+        throw $e;
+    }
+    finally{
+        unset($conn);
+    }
+}
+
 function pdo_execute_return_lastInsertId($sql){
     $sql_args = array_slice(func_get_args(), 1);
     try{
