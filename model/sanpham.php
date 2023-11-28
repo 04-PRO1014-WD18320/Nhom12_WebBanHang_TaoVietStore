@@ -53,6 +53,12 @@
             $sp = pdo_query_one($sql);
             return $sp;
         }
+        function loadone_sanphamCart ($idList) {
+    $sql = 'SELECT * FROM sanpham WHERE id IN ('. $idList . ')';
+    $sanpham = pdo_query($sql);
+    return $sanpham;
+}
+
         function loadone_sanpham_cungloai($id,$iddm){
             $sql="select *from sanpham where iddm=".$iddm." AND id <>".$id;
             $listsanpham=pdo_query($sql);

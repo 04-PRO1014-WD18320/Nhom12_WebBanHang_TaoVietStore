@@ -9,11 +9,18 @@
 .chinh {
     text-align: center;
 }
+.product-details-container{
+    width :100%;
+    margin:auto;
+    display:flex;
+    justify-content : center;
+    align-items: center;
+}
 
 .img {
     display: inline-block;
 }
-input{
+.ip-f{
     border: none;
     background: transparent linear-gradient(180deg,#fd475a 0%,#bf1e2d 100%) 0% 0% no-repeat padding-box;
     box-shadow: 0 4px 6px #00000029;
