@@ -202,7 +202,7 @@
             if ($counter < 1) {
                 extract($sp_cung_loai);
                 $img = $img_path . $img;
-                $linksp = "     " . $id;
+                $linksp = "index.php?act=sanphamct&idsp=" . $id;
                
                 echo' </div>
                 <div class="product-shop">
