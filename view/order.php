@@ -8,14 +8,103 @@
     .sub-order td,.sub-order th{padding: 5px;}
     .sub-order td:first-child,.sub-order th:first-child{width: 70%;}
     .sub-order td:last-child,.sub-order th:last-child{text-align: right;}
+    h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"] {
+        padding: 8px 10px;
+        width: 100%;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        padding: 10px 20px;
+        margin-top: 15px;
+        display: block;
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    .page-order {
+        display: flex;
+    }
+
+    .form-order {
+        width: 70%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .sub-order {
+        width: 30%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .sub-order table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    .sub-order th,
+    .sub-order td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+
+    .sub-order th {
+        background-color: #f2f2f2;
+    }
+
+    .sub-order td:first-child,
+    .sub-order th:first-child {
+        width: 70%;
+    }
+
+    .sub-order td:last-child,
+    .sub-order th:last-child {
+        text-align: right;
+    }
 </style>
 <div class="page-order">
     <div class="form-order">
+        
         <form action="" method="post">
             <h2>Thông tin khách hàng</h2>
-            <div><input type="text" name="txthoten" id="" placeholder="Họ và tên" required></div>
-            <div><input type="tel" name="txttel" id="" placeholder="Số điện thoại" required></div>
-            <div><input type="email" name="txtemail" id="" placeholder="Email" required></div>
+            <div><input type="text" name="txthoten" id="" placeholder="Họ và tên" required  <?php
+                    if(isset($_SESSION['name'])){
+                        extract($_SESSION['name']);
+echo 'value="'.$name.'"';  ?>
+                    <?php  }else{ echo 'value=""'; }?> ></div>
+            <div><input type="tel" name="txttel" id="" placeholder="Số điện thoại" required 
+            <?php
+                    if(isset($_SESSION['name'])){
+                        extract($_SESSION['name']);
+echo 'value="'.$sdt.'"';  ?>
+                    <?php  }else{ echo 'value=""'; }?>></div>
+            <div><input type="email" name="txtemail" id="" placeholder="Email" required
+            <?php
+                    if(isset($_SESSION['name'])){
+                        extract($_SESSION['name']);
+echo 'value="'.$email.'"';  ?>
+                    <?php  }else{ echo 'value=""'; }?>
+                    ></div>
             <div><input type="text" name="txtaddress" id="" placeholder="Địa chỉ" required></div>
             <h3>Phương thức thanh toán</h3>
             <p><input type="radio" name="pttt" id="" value="1" required> Thanh toán khi giao hàng</p>
@@ -23,6 +112,9 @@
             <input type="submit" value="Xác nhận đặt hàng" name="order_confirm">
         </form>
     </div>
+
+    
+
     <div class="sub-order">
         <h2>Đơn hàng</h2>
         <table >
