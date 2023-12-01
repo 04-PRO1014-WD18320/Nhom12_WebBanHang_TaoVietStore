@@ -2,6 +2,7 @@
 session_start();
 include "model/taikhoan.php";
 include "model/pdo.php";
+
 if((isset($_GET['act']))&&($_GET['act']!="")){
     $act=$_GET['act'];
     switch($act){
