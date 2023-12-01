@@ -1,7 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
    
-<!-- Mirrored from wphix.com/template/dukamarket/dukamarket/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Nov 2023 16:59:26 GMT -->
 <head>
       <meta charset="utf-8">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -74,6 +73,7 @@
                                     
                                     
                     <?php
+
 
 }else{
 
