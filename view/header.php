@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TaoVietStore</title>
-    <link rel="stylesheet" href="view/css/style2.css">
+    <link rel="stylesheet" href="view/css/style1.css">
     
     
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <a href="" class="logo">
-                <img src="view/upload/logo1.jpg" alt="">
+            <a href="" class="logo123">
+                <img src="view/upload/logo3.jpg" alt="" >
             </a>
             <div class="menu">
                 <div class="item">
@@ -30,7 +30,7 @@
                             </li>';
                         }
                         ?>
-                        <!-- <li><a href="">dien thoai</a></li>en
+                        <!-- <li><a href="">dien thoai</a></li>
                         <li><a href="">dien thoai</a></li>
                         <li><a href="">dien thoai</a></li>
 
@@ -51,7 +51,7 @@
                 </div>
 
                 <div class="item">
-                    <a href="">Chính Sách</a>
+                    <a href="index.php?act=dskh">Khach Hang</a>
                 </div>
                 
 
@@ -72,3 +72,4 @@
             
 
         </div>
+

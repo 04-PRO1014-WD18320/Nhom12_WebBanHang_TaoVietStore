@@ -1,7 +1,7 @@
 <?php
 // Mo ket noi den co so du lieu
 function pdo_get_connection(){
-    $dburl = "mysql:host=localhost;dbname=dataduan1;charset=utf8";
+    $dburl = "mysql:host=localhost;dbname=dataduan11;charset=utf8";
     $username = 'root';
     $password = '';
 
@@ -21,6 +21,40 @@ function pdo_execute($sql){
         $conn = pdo_get_connection();
         $stmt = $conn->prepare($sql);
         $stmt->execute($sql_args);
+    }
+    catch(PDOException $e){
+        throw $e;
+    }
+    finally{
+        unset($conn);
+    }
+}
+
+function pdo_executeid($sql){
+    $sql_args=array_slice(func_get_args(),1);
+    try{
+        $conn=pdo_get_connection();
+        $stmt=$conn->prepare($sql);
+        $stmt->execute($sql_args);
+        $lastInsertId = $conn->lastInsertId();
+
+        return $lastInsertId;
+    }
+    catch(PDOException $e){
+        throw $e;
+    }
+    finally{
+        unset($conn);
+    }
+}
+
+function pdo_execute_return_lastInsertId($sql){
+    $sql_args = array_slice(func_get_args(), 1);
+    try{
+        $conn = pdo_get_connection();
+        $stmt = $conn->prepare($sql);
+        $stmt->execute($sql_args);
+        return $conn->lastInsertId();
     }
     catch(PDOException $e){
         throw $e;
