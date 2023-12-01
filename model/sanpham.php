@@ -22,6 +22,11 @@
             $listsanpham=pdo_query($sql);
             return $listsanpham;
         }
+        function loadsp_ran(){
+            $sql ="select * from sanpham ORDER BY RAND() limit 0,6";
+            $listsanpham=pdo_query($sql);
+            return $listsanpham;
+        }
 
         function loadall_sanpham($kyw="",$iddm=0){
             $sql="select * from sanpham where 1";
