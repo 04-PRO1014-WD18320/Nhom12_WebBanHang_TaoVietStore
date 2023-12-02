@@ -25,7 +25,6 @@
                 <li><a href="index.php?act=addsp">San pham</a></li>
                 <li><a >Gioi Thieu</a></li>
                 <li><a >Lien He</a></li>
-                <li><a >Chinh Sach</a></li>
           
 
     
