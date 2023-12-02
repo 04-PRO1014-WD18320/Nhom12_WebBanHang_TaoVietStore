@@ -7,7 +7,7 @@ include "model/danhmuc.php";
 include "model/order.php";
 include "global.php";
 $dsdm = loadall_danhmuc();
-$spnew =loadall_danhmuc_home();
+// $spnew =loadall_danhmuc_home();
 include "view/header.php";  
 if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
     $act = $_GET['act'];
