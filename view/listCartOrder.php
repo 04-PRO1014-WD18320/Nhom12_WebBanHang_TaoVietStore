@@ -1,3 +1,66 @@
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    h1, h2 {
+        color: #333;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    img {
+        max-width: 100px;
+        height: auto;
+    }
+
+    input {
+        width: 50px;
+        text-align: center;
+    }
+
+    button {
+        padding: 5px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+    input[type="submit"] {
+        padding: 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: auto;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+
 <?php
 if (empty($dataDb)) {
     echo '<h1>Chưa có sản phẩm nào trong giỏ hàng</h1>';
@@ -45,10 +108,8 @@ if (empty($dataDb)) {
                     </td>
                 </tr>
             <?php
-                // Tính tổng giá đơn hàng
                 $sum_total += ((int)$product['price'] * (int)$quantityInCart);
 
-                // Lưu tổng giá trị vào sesion
                 $_SESSION['resultTotal'] = $sum_total;
             endforeach;
             ?>
@@ -77,15 +138,12 @@ if (empty($dataDb)) {
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script>
-    // hàm cập nhật số lượng
     function updateQuantity(id, index) {
-        // lấy giá trị của ô input
         let newQuantity = $('#quantity_' + id).val();
         if (newQuantity <= 0) {
             newQuantity = 1
         }
 
-        // Gửi yêu cầu bằng ajax để cập nhật giỏ hàng
         $.ajax({
             type: 'POST',
             url: './view/updateQuantity.php',

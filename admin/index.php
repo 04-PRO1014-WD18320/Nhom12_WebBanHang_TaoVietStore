@@ -136,6 +136,7 @@
                 //         $ngaydathang = date('h:i:sa d/m/Y');
                 //         $tongdonhang= tongdonhang();
                 //         $idbill =   insert_bill($name,$email,$address,$tel,$ptt,$ngaydathang,$tongdonhang)
+<<<<<<< HEAD
 
 
                 //         foreach ($_SESSION['mycart']as $cart){
@@ -158,6 +159,20 @@
 
 
 
+=======
+
+
+                //         foreach ($_SESSION['mycart']as $cart){
+                //             insert_cart($_SESSION['user']['id'],$cart['0'],$cart['2'],$cart['1'],$cart['3'],$cart['4'],$cart['5'], $idbill)
+                //         }
+
+                //         $_SESSION['cart'] = [];
+                //     }
+                //     $listbill = loadone_bill($idbill);
+                //     $billct = loadall_cart($idbill);
+                //     include  "view/cart/billconfirm.php";
+                //     break;
+>>>>>>> a7c05ec5eff466742ecfd9a4e199270415a5ae65
                 case 'mybill':
                     include  "view/cart/mybill.php";
                     default:

@@ -16,7 +16,7 @@
             </a>
             <div class="menu">
                 <div class="item">
-                    <a href="">Trang Chủ</a>
+                    <a href="index.php">Trang Chủ</a>
                 </div>
                 <div class="item">
                     <a href="">Danh Mục</a>
@@ -73,3 +73,4 @@
 
         </div>
 
+        

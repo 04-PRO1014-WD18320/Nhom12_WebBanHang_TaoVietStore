@@ -47,6 +47,7 @@
             foreach ($spnew as $sp) {
                 extract($sp);
                     $hinh=$img_path.$img;
+                    $linksp = "index.php?act=sanphamct&idsp=" . $id;
                     if(($i==2)||($i==5)||($i==8)){
                         $mr="mr";
 
@@ -58,7 +59,7 @@
                     
                     <div class="items'.$mr.'">
                     <table border="1">
-                      <td>  <img src="'.$hinh.'" alt="" height="300px" >
+                      <td> <a href="' . $linksp . '"> <img src="'.$hinh.'" alt="" height="300px" ></a>
                         <div class="name">'.$name.'</div>
                         <div class="price">'.$price.'</div> </td>
                         
