@@ -9,6 +9,7 @@
 
 </head>
 <body>
+<a href="index.php"><img src="view/assets/img/logo/backgr.png" alt="" class="anhlogo"></a>
 
     <div class="container">
         <form action="kiemtradn.php?act=dangky" method="post">
@@ -32,6 +33,7 @@
             </div>
             <div class="chucnang">
             <label for=""><a href="kiemtradn.php?act=dangnhap">Đăng nhập</a></label>
+
             </div>
 
           
