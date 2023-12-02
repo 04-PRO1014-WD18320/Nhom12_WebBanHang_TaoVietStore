@@ -20,7 +20,7 @@
                 <label for="tendn">Tên đăng nhập</label>
             </div>
             <div class="boxx">
-                <input type="text" name="pass"  placeholder=" " required>
+                <input type="password" name="pass"  placeholder=" " required>
                 <label for="pass">Mật khẩu</label>
                 
             </div>
