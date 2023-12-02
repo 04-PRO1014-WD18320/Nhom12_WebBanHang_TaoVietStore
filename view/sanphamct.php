@@ -51,7 +51,7 @@
                             <h6><?= $name ?></h6>
                            
                             <div class="price mb-10">
-                                <span><?= $price ?></span>
+                                <span><?= number_format((int)$price, 0, ",", ".")  ?> <u>đ</u></span>
                             </div>
                             
                             <p class="des-text mb-35"><?= $mota ?></p>
@@ -121,7 +121,7 @@
                         <h6><a href="<?= $linksp ?>"><?= $name ?></a></h6>
                         
                         <div class="price">
-                          <span><?= $price ?></span>
+                          <span><?= number_format((int)$price, 0, ",", ".")  ?> <u>đ</u></span>
                         </div>
                       </div>
                       <div class="product__add-cart text-center">

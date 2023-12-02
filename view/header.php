@@ -45,7 +45,7 @@ ob_start(); // Bắt đầu bộ đệm đầu ra
                         <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
                             <div class="header__info">
                                 <div class="logo">
-                                    <a href="index.html" class="logo-image"><img src="view/assets/img/logo/backgr.png" alt="logo"></a>
+                                    <a href="index.php" class="logo-image"><img src="view/assets/img/logo/backgr.png" alt="logo"></a>
                                 </div>
                             </div>
                         </div>
