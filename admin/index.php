@@ -125,7 +125,8 @@
                  case "bill";
                     include "view/cart/bill.php";   
                     break;
-                
+
+             
                 case 'mybill':
                     include  "view/cart/mybill.php";
                     default:
