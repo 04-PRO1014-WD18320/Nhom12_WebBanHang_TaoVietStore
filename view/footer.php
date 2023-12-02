@@ -139,5 +139,4 @@
       <script src="assets/js/main.js"></script>
    </body>
 
-<!-- Mirrored from wphix.com/template/dukamarket/dukamarket/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Nov 2023 17:00:14 GMT -->
 </html>
