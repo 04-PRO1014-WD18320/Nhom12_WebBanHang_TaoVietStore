@@ -17,9 +17,9 @@
                   <div class="slider-bottom-btn mt-75">
                     <a data-animation="fadeInUp" data-delay="1.15s" href="shop.html" class="st-btn-b b-radius">Tìm hiểu ngay</a>
                   </div>
-                  
+
                 </div>
-                
+
               </div>
             </div>
           </div>
@@ -47,60 +47,59 @@
         </div>
       </div>
       <div class="row">
-      <?php
-            $counter=0;
-            foreach ($spnew as $sp) {
-                
-              if ($counter < 6) {
-                extract($sp);
-                    $hinh=$img_path.$img;
-                    $linksp = "index.php?act=sanphamct&idsp=" . $id;
-                  ?>
-                    
-                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
-                    <div class="product__item product__item-2 b-radius-2 mb-20">
-                      <div class="product__thumb fix">
-                        <div class="product-image w-img">
-                          <a href=" <?= $linksp ?> ">
-                            <img src="<?= $hinh ?>">
-                          </a>
-                        </div>
-          
-          
-                      </div>
-                      <div class="product__content product__content-2">
-                        <h6><a href="<?= $linksp ?>"><?= $name ?></a></h6>
-                        
-                        <div class="price">
-                          <span><?= $price ?></span>
-                        </div>
-                      </div>
-                      <div class="product__add-cart text-center">
-                        <?php 
-                         extract($sp);
-                        ?>
-                        <button type="button" data-id="<?= $id ?>" onclick="addToCart(<?= $id ?>, '<?= $name ?>', <?= $price ?>)" class="cart-btn-3 product-modal-sidebar-open-btn d-flex align-items-center justify-content-center w-100">
-                          add to car
-                        </button>
-                       
-                      </div>
-                    </div>
+        <?php
+        $counter = 0;
+        foreach ($spnew as $sp) {
+
+          if ($counter < 6) {
+            extract($sp);
+            $hinh = $img_path . $img;
+            $linksp = "index.php?act=sanphamct&idsp=" . $id;
+        ?>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
+              <div class="product__item product__item-2 b-radius-2 mb-20">
+                <div class="product__thumb fix">
+                  <div class="product-image w-img">
+                    <a href=" <?= $linksp ?> ">
+                      <img src="<?= $hinh ?>">
+                    </a>
                   </div>
+
+
+                </div>
+                <div class="product__content product__content-2">
+                  <h6><a href="<?= $linksp ?>"><?= $name ?></a></h6>
+
+                  <div class="price">
+                    <span> <?= number_format((int)$price, 0, ",", ".")  ?> <u>đ</u>
+                    </span>
+                  </div>
+                </div>
+                <div class="product__add-cart text-center">
                   <?php
-                  $counter++;
-                } else {
-                    break; 
-                }
-                 
-           
-            }
-            
-            ?>
-      
-      
-      
-      
-      
+                  extract($sp);
+                  ?>
+                  <button type="button" data-id="<?= $id ?>" onclick="addToCart(<?= $id ?>, '<?= $name ?>', <?= $price ?>)" class="cart-btn-3 product-modal-sidebar-open-btn d-flex align-items-center justify-content-center w-100">
+                    add to car
+                  </button>
+
+                </div>
+              </div>
+            </div>
+        <?php
+            $counter++;
+          } else {
+            break;
+          }
+        }
+
+        ?>
+
+
+
+
+
   </section>
   <!-- trending-product-area-end -->
 
@@ -164,60 +163,58 @@
         </div>
       </div>
       <div class="row">
-      <?php
-            $counter=0;
-            foreach ($ransp as $sp1) {
-                
-              if ($counter < 6) {
-                extract($sp1);
-                    $hinh=$img_path.$img;
-                    $linksp = "index.php?act=sanphamct&idsp=" . $id;
-                  ?>
-                    
-                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
-                    <div class="product__item product__item-2 b-radius-2 mb-20">
-                      <div class="product__thumb fix">
-                        <div class="product-image w-img">
-                          <a href=" <?= $linksp ?> ">
-                            <img src="<?= $hinh ?>">
-                          </a>
-                        </div>
-          
-          
-                      </div>
-                      <div class="product__content product__content-2">
-                        <h6><a href="<?= $linksp ?>"><?= $name ?></a></h6>
-                        
-                        <div class="price">
-                          <span><?= $price ?></span>
-                        </div>
-                      </div>
-                      <div class="product__add-cart text-center">
-                        <?php 
-                         extract($sp1);
-                        ?>
-                        <button type="button" data-id="<?= $id ?>" onclick="addToCart(<?= $id ?>, '<?= $name ?>', <?= $price ?>)" class="cart-btn-3 product-modal-sidebar-open-btn d-flex align-items-center justify-content-center w-100">
-                          add to car
-                        </button>
-                       
-                      </div>
-                    </div>
+        <?php
+        $counter = 0;
+        foreach ($ransp as $sp1) {
+
+          if ($counter < 6) {
+            extract($sp1);
+            $hinh = $img_path . $img;
+            $linksp = "index.php?act=sanphamct&idsp=" . $id;
+        ?>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
+              <div class="product__item product__item-2 b-radius-2 mb-20">
+                <div class="product__thumb fix">
+                  <div class="product-image w-img">
+                    <a href=" <?= $linksp ?> ">
+                      <img src="<?= $hinh ?>">
+                    </a>
                   </div>
+
+
+                </div>
+                <div class="product__content product__content-2">
+                  <h6><a href="<?= $linksp ?>"><?= $name ?></a></h6>
+
+                  <div class="price">
+                    <span><?= number_format((int)$price, 0, ",", ".")  ?> <u>đ</u></span>
+                  </div>
+                </div>
+                <div class="product__add-cart text-center">
                   <?php
-                  $counter++;
-                } else {
-                    break; 
-                }
-                 
-           
-            }
-            
-            ?>
-      
-      
-      
-      
-      
+                  extract($sp1);
+                  ?>
+                  <button type="button" data-id="<?= $id ?>" onclick="addToCart(<?= $id ?>, '<?= $name ?>', <?= $price ?>)" class="cart-btn-3 product-modal-sidebar-open-btn d-flex align-items-center justify-content-center w-100">
+                    add to car
+                  </button>
+
+                </div>
+              </div>
+            </div>
+        <?php
+            $counter++;
+          } else {
+            break;
+          }
+        }
+
+        ?>
+
+
+
+
+
   </section>
 
 </main>
@@ -225,24 +222,25 @@
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script>
-    let totalProduct = document.getElementById('totalProduct');
-    function addToCart(productId, productName, productPrice) {
-       
-        $.ajax({
-            type: 'POST',
-            url: 'view/addToCart.php',
-            data: {
-                id: productId,
-                name: productName,
-                price: productPrice
-            },
-            success: function(response) {
-                totalProduct.innerText = response;
-                alert('Bạn đã thêm sản phẩm vào giỏ hàng thành công!');
-            },
-            error: function(error) {
-                console.log(error);
-            }
-        });
-    }
+  let totalProduct = document.getElementById('totalProduct');
+
+  function addToCart(productId, productName, productPrice) {
+
+    $.ajax({
+      type: 'POST',
+      url: 'view/addToCart.php',
+      data: {
+        id: productId,
+        name: productName,
+        price: productPrice
+      },
+      success: function(response) {
+        totalProduct.innerText = response;
+        alert('Bạn đã thêm sản phẩm vào giỏ hàng thành công!');
+      },
+      error: function(error) {
+        console.log(error);
+      }
+    });
+  }
 </script>

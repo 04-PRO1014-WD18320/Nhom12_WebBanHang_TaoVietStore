@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dang Nhap</title>
+    <title>Quen mat khau</title>
     <link rel="stylesheet" href="view/css/dangnhap.css">
 
 </head>
@@ -12,25 +12,20 @@
     
     <a href="index.php"><img src="view/assets/img/logo/backgr.png" alt="" class="anhlogo"></a>
     <div class="container">
-        <form action="kiemtradn.php?act=dangnhap" method="post">
-            <h1>Đăng nhập</h1>
+        <form action="kiemtradn.php?act=quenmk" method="post">
+            <h1>quên mật khẩu</h1>
            
             <div class="boxx">
-                <input type="text" name="name"  placeholder=" " required>
-                <label for="tendn">Tên đăng nhập</label>
+                <input type="email" name="email"  placeholder=" " required>
+                <label for="email">Email</label>
             </div>
-            <div class="boxx">
-                <input type="text" name="pass"  placeholder=" " required>
-                <label for="pass">Mật khẩu</label>
-                
-            </div>
+            
             <div class="chucnang">
-            <label for=""><a href="kiemtradn.php?act=dangky">Chưa có tài khoản?</a></label>
-            <label for="" class="mnnn"><a href="kiemtradn.php?act=quenmk">Quên mật khẩu</a></label>
+            <label for=""><a href="kiemtradn.php?act=dangnhap">Đăng nhập</a></label>
             </div>
 
            
-                <input class="btn" type="submit" value="Đăng nhập" name="dangnhap"  >
+                <input class="btn" type="submit" value="Gửi" name="guiemail"  >
            
             </form>
         <h2 class="thongbao">

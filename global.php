@@ -1,3 +1,3 @@
 <?php
-    $img_path="view/upload/"/*biến dùng chung */
+    $img_path="upload/"/*biến dùng chung */
 ?>

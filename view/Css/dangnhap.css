@@ -25,12 +25,19 @@ body{
 
 
 .area{
-    background: #4e54c8;  
-    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    background: #263C97;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #263C97);  
     width: 100%;
     height:100vh;
     position: relative ;
    
+}
+.anhlogo{
+    top: 2%;
+    position: absolute;
+    z-index: 999;
+    width: 11%;
+    height: 7%;
 }
 
 .circles{

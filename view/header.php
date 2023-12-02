@@ -25,7 +25,10 @@
       <link rel="stylesheet" href="view/assets/css/style.css">
    </head>
    <body>
-      
+   <?php
+ob_start(); // Bắt đầu bộ đệm đầu ra
+// Các mã PHP và HTML khác ở đây
+?>
     <div class="progress-wrap">
          <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
@@ -41,7 +44,7 @@
                         <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
                             <div class="header__info">
                                 <div class="logo">
-                                    <a href="index.html" class="logo-image"><img src="view/assets/img/logo/backgr.png" alt="logo"></a>
+                                    <a href="index.php" class="logo-image"><img src="view/assets/img/logo/backgr.png" alt="logo"></a>
                                 </div>
                             </div>
                         </div>
@@ -49,7 +52,7 @@
                             <div class="header__search">
                                 <form action="#">
                                     <div class="header__search-box">
-                                        <input class="search-input" type="text" placeholder="I'm shopping for...">
+                                        <input class="search-input" type="text" placeholder="Tìm kiếm cho...">
                                         <button class="button" type="submit"><i class="far fa-search"></i></button>
                                     </div>
                                     
@@ -66,7 +69,7 @@
                     if(isset($_SESSION['name'])){
                         extract($_SESSION['name']);
                      ?>    
-                                    <span class="sub" >Xin chao <?=  $name?> </span>
+                                    <span class="sub" >Xin chào <?=  $name?> </span>
                                      <a href="index.php?act=thoat">thoat</a></span>
                                     </span>
                                     
@@ -77,8 +80,8 @@
 
 }else{
 
-echo'  <a class="sub" href="kiemtradn.php?act=dangnhap"> Login </a>
-My Account </span>
+echo'  <a class="sub" href="kiemtradn.php?act=dangnhap"> Đăng nhập </a>
+Tài khoản của tôi </span>
 </a>';
 
 }?>
@@ -92,7 +95,7 @@ My Account </span>
                                     <span class="count" id="totalProduct"><?= !empty($_SESSION['cart']) ? count($_SESSION['cart']) : 0 ?></span>
                                     <span class="text">
                                         
-                                    <span class="sub">Your Cart</span>
+                                    <span class="sub">Giỏ hàng</span>
                                      </span>
 
                                     </a>
