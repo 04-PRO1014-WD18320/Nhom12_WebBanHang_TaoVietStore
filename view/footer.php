@@ -1,3 +1,4 @@
+
 <footer>
         <div class="fotter-area d-ddark-bg">
             <div class="footer__top pt-60 pb-10">
@@ -15,7 +16,7 @@
                                         <a href="#"><img src="assets/img/brand/app_android.png" alt=""></a>
                                     </div>
                                     <div class="social-icon social-icon-2">
-                                        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="https://www.facebook.com/" class="facebook"><i class="fab fa-facebook-f"></i></a>
                                         <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
                                         <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
                                         <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
@@ -95,6 +96,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
             <div class="footer__bottom-2">
@@ -116,9 +118,7 @@
             </div>
         </div>
     </footer>
-    <!-- footer-end -->
-
-      <!-- JS here -->
+ 
       <script src="assets/js/vendor/jquery.js"></script>
       <script src="assets/js/vendor/waypoints.js"></script>
       <script src="assets/js/bootstrap-bundle.js"></script>

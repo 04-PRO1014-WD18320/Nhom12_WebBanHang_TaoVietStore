@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 include "model/pdo.php";
 include "model/sanpham.php";
@@ -6,7 +7,11 @@ include "model/taikhoan.php";
 include "model/danhmuc.php";
 include "model/order.php";
 include "global.php";
+
+      
+$spnew=loadall_sanpham_home();
 $spnew = loadall_sanpham_home();
+
 $dsdm = loadall_danhmuc();
 $ransp=loadsp_ran();
 
@@ -20,6 +25,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             // Kiểm tra xem giỏ hàng có dữ liệu hay không
             if (!empty($_SESSION['cart'])) {
                 $cart = $_SESSION['cart'];
+
 
                 // Tạo mảng chứa ID các sản phẩm trong giỏ hàng
                 $productId = array_column($cart, 'id');
@@ -100,6 +106,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 }
                
                 break;
+
         
         
         case "quenmk":

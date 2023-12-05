@@ -1,7 +1,4 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
-   
-<head>
+
       <meta charset="utf-8">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       <title>Shop iphone</title>
@@ -36,6 +33,7 @@ ob_start(); // Bắt đầu bộ đệm đầu ra
     </div>
       
     <header class="header d-blue-bg">
+
         
         <div class="header-mid">
             <div class="container">
@@ -126,8 +124,15 @@ Tài khoản của tôi </span>
                                    
                                     <li><a href="blog.html">danh mục <i class="far fa-angle-down"></i></a>
                                         <ul class="submenu">
-                                            <li><a href="#">sp1</a></li>
-                                            <li><a href="#">sp2</a></li>
+                                        <?php
+                        foreach ($dsdm as $dm) {
+                            extract($dm);
+                            $linkdm ="index.php?act=sanpham&iddm=".$id;
+                            echo '    <li>
+                            <a href="'.$linkdm.'">'.$name.'</a>
+                            </li>';
+                        }
+                        ?>
                                         </ul>
                                     </li>
                                     

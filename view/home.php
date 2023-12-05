@@ -1,4 +1,3 @@
-<main>
 
   <!-- slider-area-start -->
   <div class="slider-area">
@@ -50,6 +49,7 @@
         <?php
         $counter = 0;
         foreach ($spnew as $sp) {
+
 
           if ($counter < 6) {
             extract($sp);
