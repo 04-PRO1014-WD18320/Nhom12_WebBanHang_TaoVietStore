@@ -13,6 +13,8 @@ $spnew=loadall_sanpham_home();
 $spnew = loadall_sanpham_home();
 
 $dsdm = loadall_danhmuc();
+$ransp=loadsp_ran();
+
 include "view/header.php";
 if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
     $act = $_GET['act'];
@@ -120,8 +122,8 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             break;
         case "thoat":
             session_unset();
-            header('Location: index.php');
-            include "view/gioithieu.php";
+            include "view/home.php";
+          
             break;
         case "gioithieu":
             include "view/gioithieu.php";

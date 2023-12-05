@@ -9,7 +9,8 @@
 
 </head>
 <body>
-
+    
+    <a href="index.php"><img src="view/assets/img/logo/backgr.png" alt="" class="anhlogo"></a>
     <div class="container">
         <form action="kiemtradn.php?act=dangnhap" method="post">
             <h1>Đăng nhập</h1>
@@ -26,6 +27,8 @@
             <div class="chucnang">
             <label for=""><a href="kiemtradn.php?act=dangky">Chưa có tài khoản?</a></label>
             <label for="" class="mnnn"><a href="index.php?act=quenmk">Quên mật khẩu</a></label>
+
+           
             </div>
 
            

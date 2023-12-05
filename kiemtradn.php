@@ -2,6 +2,8 @@
 session_start();
 include "model/taikhoan.php";
 include "model/pdo.php";
+
+
 if((isset($_GET['act']))&&($_GET['act']!="")){
     $act=$_GET['act'];
     switch($act){
@@ -16,7 +18,18 @@ if((isset($_GET['act']))&&($_GET['act']!="")){
             }
             include "view/taikhoan/dangky.php";
             break;
-
+            case 'quenmk':
+                if(isset($_POST['guiemail'])&&($_POST['guiemail'])){
+                    $email=$_POST['email'];
+                    $checkemail=checkemail($email)  ;
+                    if(is_array($checkemail)){
+                        $thongbao="Mật khẩu của bạn là:".$checkemail['pass'];
+                    }else{
+                        $thongbao="Email không tồn tại";
+                    }                         
+                }
+                include "view/taikhoan/quenmk.php";
+                break;
         case 'dangnhap':
             if(isset($_POST['dangnhap'])&&($_POST['dangnhap'])){
                 $name=$_POST['name'];
