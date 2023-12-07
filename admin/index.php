@@ -3,6 +3,7 @@
     include "../model/danhmuc.php";
     include "../model/sanpham.php";
     include "../model/taikhoan.php";
+    include "../model/cart.php";
     include "header.php";
     if(isset($_GET['act'])){
         $act=$_GET['act'];
@@ -181,6 +182,17 @@
                     default:
                     include "home.php";
                     break;
+
+
+                case "thongke":
+                    $listthongke=loadall_thongke();
+                    include "thongke/list.php";   
+                    break;
+                    
+                 case "bieudo":
+                        $listthongke=loadall_thongke();
+                        include "thongke/bieudo.php";   
+                        break;
 
                         }
                     }else{
