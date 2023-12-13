@@ -15,7 +15,7 @@
                   <h2 data-animation="fadeInLeft" data-delay="1.7s" class="pt-15 slider-title pb-5">GIẢM ĐẾN 30% CỦA <br> DÒNG IPHONE MỚI NHẤT</h2>
                   <p class="pr-20 slider_text" data-animation="fadeInLeft" data-delay="1.9s">Giảm đến 30% và miễn phí ship</p>
                   <div class="slider-bottom-btn mt-75">
-                    <a data-animation="fadeInUp" data-delay="1.15s" href="shop.html" class="st-btn-b b-radius">Tìm hiểu ngay</a>
+                    <a data-animation="fadeInUp" data-delay="1.15s" href="index.php?act=sanpham&iddm=42" class="st-btn-b b-radius">Tìm hiểu ngay</a>
                   </div>
 
                 </div>
@@ -41,7 +41,7 @@
               <h5 class="st-titile">Sản phẩm</h5>
             </div>
             <div class="button-wrap button-wrap-2">
-              <a href="product.html">Tất cả sản phẩm <i class="fal fa-chevron-right"></i></a>
+              <a href="index.php?act=shop">Tất cả sản phẩm <i class="fal fa-chevron-right"></i></a>
             </div>
           </div>
         </div>
@@ -114,10 +114,10 @@
         <div class="col-xl-4 col-lg-4 col-md-12">
           <div class="banner__item p-relative w-img mb-30">
             <div class="banner__img b-radius-2">
-              <a href="#"><img src="view/assets/img/banner/backkkk1.png" alt=""></a>
+              <a href="index.php?act=sanpham&iddm=43"><img src="view/assets/img/banner/backkkk1.png" alt=""></a>
             </div>
             <div class="banner__content banner__content-2">
-              <h6><a href="#">Macbook <br> Siêu giảm giá</a></h6>
+              <h6><a href="index.php?act=sanpham&iddm=43">Macbook <br> Siêu giảm giá</a></h6>
               <p class="sm-p">Giảm -20%</p>
             </div>
           </div>
@@ -125,10 +125,10 @@
         <div class="col-xl-4 col-lg-4 col-md-12">
           <div class="banner__item p-relative mb-30 w-img">
             <div class="banner__img b-radius-2">
-              <a href="#"><img src="view/assets/img/banner/backkkk3.png" alt=""></a>
+              <a href="index.php?act=sanpham&iddm=42"><img src="view/assets/img/banner/backkkk3.png" alt=""></a>
             </div>
             <div class="banner__content banner__content-2">
-              <h6><a href="#">Iphone <br>Mẫu mới nhất </a></h6>
+              <h6><a href="index.php?act=sanpham&iddm=42">Iphone <br>Mẫu mới nhất </a></h6>
               <p class="sm-p">Giảm -15%</p>
             </div>
           </div>
@@ -136,10 +136,10 @@
         <div class="col-xl-4 col-lg-4 col-md-12">
           <div class="banner__item p-relative mb-30 w-img">
             <div class="banner__img b-radius-2">
-              <a href="#"><img src="view/assets/img/banner/backkkk2.png" alt=""></a>
+              <a href="index.php?act=sanpham&iddm=44"><img src="view/assets/img/banner/backkkk2.png" alt=""></a>
             </div>
             <div class="banner__content banner__content-2">
-              <h6><a href="#">Apple Watch <br>Giá cực hời </a></h6>
+              <h6><a href="index.php?act=sanpham&iddm=44">Apple Watch <br>Giá cực hời </a></h6>
               <p class="sm-p">Giảm -20%</p>
             </div>
           </div>
@@ -157,7 +157,7 @@
               <h5 class="st-titile">Gợi ý cho bạn</h5>
             </div>
             <div class="button-wrap button-wrap-2">
-              <a href="product.html">Tất cả sản phẩm <i class="fal fa-chevron-right"></i></a>
+              <a href="index.php?act=shop">Tất cả sản phẩm <i class="fal fa-chevron-right"></i></a>
             </div>
           </div>
         </div>

@@ -15,7 +15,7 @@
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
 
-                                  <li class="breadcrumb-item active" aria-current="page">Shop/Time</li>
+                                 
                                   
                                   
                                 </ol>
@@ -67,10 +67,62 @@
                     </div>
                 </div>
             </div>
+            
         </div>
+        
+        
 
 
+<div class="product-details-des mt-40 mb-60">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="product__details-des-tab">
+                            <ul class="nav nav-tabs" id="productDesTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link active" id="des-tab" data-bs-toggle="tab" data-bs-target="#des" type="button" role="tab" aria-controls="des" aria-selected="true">Bình luận </button>
+                                </li>
+                              </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="prodductDesTaContent">
+                <div class="tab-pane fade" id="aditional" role="tabpanel" aria-labelledby="aditional-tab">
+                       
+                    </div>
+                    <div class="tab-pane fade active show" id="des" role="tabpanel" aria-labelledby="des-tab">
+                    <section class="trending-product-area light-bg-s pt-25 pb-15">
+    <div class="container custom-conatiner">
+      
+      <div class="row">
+      <div class="bl">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+                <script>
+                    $(document).ready(function(){
+                            $("#binhluan").load("view/binhluan/binhluanform.php", {idpro: <?=$id?>});
+                        });
+                  
+                </script>   
+               
+                <div class="row" id="binhluan">
+                   
+                </div>
+</div>
+      
+      
+      
+      
+  </section>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
     <!-- sanpham tuong tu va binh lua -->
+    
     <div class="product-details-des mt-40 mb-60">
             <div class="container">
                 <div class="row">
@@ -80,21 +132,18 @@
                                 <li class="nav-item" role="presentation">
                                   <button class="nav-link active" id="des-tab" data-bs-toggle="tab" data-bs-target="#des" type="button" role="tab" aria-controls="des" aria-selected="true">Gợi ý cho bạn </button>
                                 </li>
-                                
-                                <li class="nav-item" role="presentation">
-                                  <button class="nav-link" id="review-tab" data-bs-toggle="tab" data-bs-target="#review" type="button" role="tab" aria-controls="review" aria-selected="false">Đánh giá và bình luận </button>
-                                </li>
                               </ul>
                         </div>
                     </div>
                 </div>
                 <div class="tab-content" id="prodductDesTaContent">
+                <div class="tab-pane fade" id="aditional" role="tabpanel" aria-labelledby="aditional-tab">
+                       
+                    </div>
                     <div class="tab-pane fade active show" id="des" role="tabpanel" aria-labelledby="des-tab">
                     <section class="trending-product-area light-bg-s pt-25 pb-15">
     <div class="container custom-conatiner">
-      <div class="row">
-        
-      </div>
+      
       <div class="row">
       <?php
             $counter=0;
@@ -162,6 +211,9 @@
 <!-- het san pham tuiong tu -->
 
 </div>
+
+
+
 
 </main>
 <script src="main.js"></script>

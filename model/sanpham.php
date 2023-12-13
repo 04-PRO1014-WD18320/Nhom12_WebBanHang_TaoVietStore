@@ -16,7 +16,11 @@
             $listsanpham=pdo_query($sql);
             return $listsanpham;
         }
-
+        function loadsp_giamdan(){
+            $sql ="select * from sanpham ORDER BY price DESC";
+            $listsanpham = pdo_query($sql);
+            return $listsanpham;
+        }
         function loadall_sanpham_home_top10(){
             $sql ="select * from sanpham where 1 order by luotxem desc limit 0,10";
             $listsanpham=pdo_query($sql);
