@@ -1,9 +1,4 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quen mat khau</title>
     <link rel="stylesheet" href="view/css/dangnhap.css">
 
@@ -28,6 +23,7 @@
                 <input class="btn" type="submit" value="Gửi" name="guiemail"  >
            
             </form>
+
         <h2 class="thongbao">
                             <?php
 
@@ -59,4 +55,6 @@
 
     
 </body>
+
 </html>
+

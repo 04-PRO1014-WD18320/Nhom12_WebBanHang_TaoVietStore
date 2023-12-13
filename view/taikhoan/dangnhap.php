@@ -26,7 +26,9 @@
             </div>
             <div class="chucnang">
             <label for=""><a href="kiemtradn.php?act=dangky">Chưa có tài khoản?</a></label>
-            <label for="" class="mnnn"><a href="kiemtradn.php?act=quenmk">Quên mật khẩu</a></label>
+            <label for="" class="mnnn"><a href="index.php?act=quenmk">Quên mật khẩu</a></label>
+
+           
             </div>
 
            

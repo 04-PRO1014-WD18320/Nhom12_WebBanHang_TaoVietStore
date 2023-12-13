@@ -30,6 +30,7 @@
     ob_start(); // Bắt đầu bộ đệm đầu ra
     // Các mã PHP và HTML khác ở đây
     ?>
+
     <div class="progress-wrap">
         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
@@ -149,18 +150,28 @@ Tài khoản của tôi </span>
                                         <li><a href="index.php">Trang chủ</a></li>
                                         <li><a href="#">Sản phẩm</a></li>
                                         <li><a href="#">Bill</a></li>
+ <li><a href="blog.html">danh mục <i class="far fa-angle-down"></i></a>
+                                        <ul class="submenu">
+                                        <?php
+                        foreach ($dsdm as $dm) {
+                            extract($dm);
+                            $linkdm ="index.php?act=sanpham&iddm=".$id;
+                            echo '    <li>
+                            <a href="'.$linkdm.'">'.$name.'</a>
+                            </li>';
+                        }
+                        ?>
+                                        </ul>
+                                    </li>
+                                    
+                                </ul>
 
-
-                                        <li><a href="blog.html">danh mục <i class="far fa-angle-down"></i></a>
-                                            <ul class="submenu">
-                                                <li><a href="#">sp1</a></li>
-                                                <li><a href="#">sp2</a></li>
-                                            </ul>
-                                        </li>
+                                        
 
                                     </ul>
                                 </nav>
                             </div>
+
                         </div>
                     </div>
 
@@ -168,3 +179,4 @@ Tài khoản của tôi </span>
             </div>
         </div>
     </header>
+
