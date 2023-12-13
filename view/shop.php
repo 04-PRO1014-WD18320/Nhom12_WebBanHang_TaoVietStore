@@ -1,5 +1,4 @@
-
-      <!-- shop-area-start -->
+<!-- shop-area-start -->
 <main>
 <div class="shop-area mb-20">
     <div class="container">
@@ -104,14 +103,15 @@
                     <div class="tab-pane fade  show active" id="FourCol" role="tabpanel" aria-labelledby="FourCol-tab">
                         <div class="tp-wrapper">
                             <div class="row g-0">
-                            <?php
-        foreach ($dssp as $sp) {
+                                <?php
 
-         
-            extract($sp);
-            $hinh = $img_path . $img;
-            $linksp = "index.php?act=sanphamct&idsp=" . $id;
-        ?>
+                                foreach ($giamsp as $sp) {
+
+
+                                    extract($sp);
+                                    $hinh = $img_path . $img;
+                                    $linksp = "index.php?act=sanphamct&idsp=" . $id;
+                                ?>
                                     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                                         <div class="product__item product__item-d">
                                             <div class="product__thumb fix">
@@ -181,6 +181,4 @@
     });
   }
 </script>
-<!-- shop-area-end -->    
-                
-           
+<!-- shop-area-end -->

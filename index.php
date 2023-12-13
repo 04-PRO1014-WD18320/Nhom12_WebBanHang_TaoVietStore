@@ -7,14 +7,14 @@ include "model/taikhoan.php";
 include "model/danhmuc.php";
 include "model/order.php";
 include "global.php";
+include "model/binhluan.php";
 
-      
-$spnew=loadall_sanpham_home();
+
 $spnew = loadall_sanpham_home();
 
 $dsdm = loadall_danhmuc();
 $ransp=loadsp_ran();
-
+$giamsp =loadsp_giamdan();
 include "view/header.php";
 
 if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
@@ -39,21 +39,26 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             }
             include "view/listCartOrder.php";
             break;
-        case "sanpham":
-            if ((isset($_POST['keyw']) && ($_POST['keyw'] != ""))) {
-                $keyw = $_POST['keyw'];
-            } else {
-                $keyw = "";
-            }
-            if (isset($_GET['iddm']) && ($_GET['iddm'] > 0)) {
-                $iddm = $_GET['iddm'];
-            } else {
-                $iddm = 0;
-            }
-            $dssp = loadall_sanpham($keyw, $iddm);
-            $tendm = load_ten_dm($iddm);
-            include "view/sanpham.php";
-            break;
+            case 'sanpham':
+                if(isset($_POST['kyw'])&&($_POST['kyw']!="")){
+                    $kyw=$_POST['kyw'];
+                }else{
+                    $kyw="";
+                }   
+                if(isset($_GET['iddm'])&&($_GET['iddm']>0)){
+                    $iddm=$_GET['iddm'];
+                    
+                }else{
+                    $iddm=0;
+                }
+                $dssp= loadall_sanpham($kyw,$iddm);
+                $tendm=load_ten_dm($iddm);
+                include "./view/sanpham.php";
+                break;
+                case 'shop':
+                   
+                    include "./view/shop.php";
+                    break;
         case "order":
             if (isset($_SESSION['cart'])) {
                 $cart = $_SESSION['cart'];
@@ -84,6 +89,10 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 header("Location: index.php?act=listCart");
             }
             break;
+            case 'dsbl':                 
+                $listbinhluan=loadall_binhluan(0); 
+                include "binhluan/list.php";
+                break;
         case "success":
             if (isset($_SESSION['success'])) {
                 include 'view/success.php';
